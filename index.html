@@ -41,7 +41,7 @@
             formData.append('paymentAmount', document.getElementById('paymentAmount').value);
             formData.append('invoiceFile', document.getElementById('invoiceFile').files[0]);
 
-            const response = await fetch('https://extraordinary-speculoos-f9abb1.netlify.app', { method: 'POST', body: formData });
+            const response = await fetch('https://contractor-billing-backend.onrender.com', { method: 'POST', body: formData });
             if (response.ok) alert('Submission successful!');
             else alert('Submission failed, please try again.');
         });
